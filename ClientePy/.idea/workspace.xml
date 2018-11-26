@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b686679-b0f2-4fdc-8a83-2c584584f2f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boundary/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/control/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/Cliente.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/TCPClient.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entity/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/src/br/boundary/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/src/br/control/ControlCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/src/br/control/ControlMototaxi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/src/br/control/EsqueletoMototaxi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/src/br/entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Servidor/src/br/entity/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/src/ProxyCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/ProxyCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/src/ProxyMototaxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/ProxyMototaxi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/src/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cliente/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/.idea/Servidor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/src/br/entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/Despachante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/src/br/control/Despachante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/EsqueletoCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/src/br/control/EsqueletoCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/EsqueletoMotoTaxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/MotoTaxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/src/br/entity/Mototaxi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/PersistCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/PersistMotoTaxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servidor/src/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Servidor/src/br/entity/TCPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.dash:Cloud Foundry.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.imports.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.frameworks.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.core/index.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.9.1.20180912-1601.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.metadata/version.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/TrabalhoFinal [Redes].iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/Despachante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/EsqueletoCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/EsqueletoMotoTaxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/MotoTaxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/PersistCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/PersistMotoTaxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/Server/TCPServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/client (Case Conflict)/ProxyCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/client (Case Conflict)/ProxyMototaxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/client (Case Conflict)/TcpClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/client (Case Conflict)/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/main/MainServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/bin/br/quixada/ufc/rsd/main/MainUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/Despachante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/EsqueletoCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/EsqueletoMotoTaxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/MotoTaxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/PersistCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/PersistMotoTaxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/Server/TCPServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/client (Case Conflict)/ProxyCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/client (Case Conflict)/ProxyMototaxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/client (Case Conflict)/TcpClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/client (Case Conflict)/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/main/MainServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrabalhoFinal [Redes]/src/br/quixada/ufc/rsd/main/MainUser.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/entity/Cliente.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/entity/Cliente.py" />
+        <option value="$PROJECT_DIR$/entity/TCPClient.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="47" />
+    <option name="width" value="1346" />
+    <option name="height" value="701" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ClientePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClientePy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClientePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClientePy" type="462c0819:PsiDirectoryNode" />
+              <item name="boundary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClientePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClientePy" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClientePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ClientePy" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b686679-b0f2-4fdc-8a83-2c584584f2f6" name="Default Changelist" comment="" />
+      <created>1543233989220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543233989220</updated>
+      <workItem from="1543233994563" duration="278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="278000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-3" width="1366" height="771" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.245827" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/entity/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/TCPClient.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entity/Cliente.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
