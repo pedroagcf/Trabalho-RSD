@@ -1,161 +1,214 @@
-package client.boundary;
+package src.client.boundary;
+
+import src.client.control.ControlProxyCliente;
+import src.client.control.ControlProxyMototaxi;
 
 import java.util.Scanner;
 
 public class Prompt {
-//    ControlProxyCalc controlProxyCalc;
-//
-//    public void startChat() {
-//        controlProxyCalc = new ControlProxyCalc();
-//
-//        Double result;
-//
-//        this.showStartMessage();
-//
-//        while (true) {
-//            result = this.controlProxyCalc.getOperationResult(this.writeMessage());
-//            if (result == null) {
-//                this.showResult("Houve um erro! Verique as operações disponíveis.");
-//                System.out.println("Operações Disponíveis: sum, sub, mul, div. \n");
-//            } else {
-//                this.showResult(""+result);
-//            }
-//        }
-//    }
-//
-//    public void showStartMessage() {
-//        System.out.println("***Calculadora Cliente/Servidor***");
-//        System.out.println("Operações Disponíveis: sum, sub, mul, div. \n");
-//    }
-//
-//    public String writeMessage() {
-//        System.out.print("Insira uma Operação - Ex. sum(1,2): ");
-//        Scanner input = new Scanner(System.in);
-//        return input.nextLine();
-//    }
-//
-//    public void showResult(String result) {
-//        System.out.println("Resultado: " + result);
-//    }
+    private int port =7896;
+    private String ip = "localhost";
+    ControlProxyCliente controlProxyCliente;
+    ControlProxyMototaxi controlProxyMototaxi;
 
-//    public class Main {
-//
-//        public static void main(String[] args) {
-//            // TODO Auto-generated method stub
-//
-//            UsuarioDAO userDAO = new UsuarioDAO();
-//            LivroDAO livroDAO = new LivroDAO();
-//            AlocacaoDAO alocDAO = new AlocacaoDAO();
-//
-//            int option;
-//
-//            Scanner scanner = new Scanner(System.in);
-//
-//            boolean end = false;
-//
-//            while(!end) {
-//
-//                System.out.println(app_name);
-//                System.out.println("| 1 | Cadastrar cliente");
-//                System.out.println("| 2 | Editar cliente");
-//                System.out.println("| 3 | Remover cliente");
-//                System.out.println("| 4 | Listar cliente");
-//                System.out.println("| 5 | Cadastrar Mototaxi");
-//                System.out.println("| 6 | Editar Mototaxi");
-//                System.out.println("| 7 | Remover Mototaxi");
-//                System.out.println("| 8 | Listar Mototaxi");
-//
-//                option = scanner.nextInt();
-//                scanner.nextLine();
-//
-//                switch (option){
-//                    case 1:{
-//
-//                        String nome, email, endereco;
-//                        System.out.println("Digite o nome do usuario:");
-//                        nome = scanner.nextLine();
-//                        System.out.println("Digite a email do usuario:");
-//                        email = scanner.nextLine();
-//                        System.out.println("Digite o endereço do usuario:");
-//                        endereco = scanner.nextLine();
-//
-//                        Usuario user = new Usuario(nome, email, endereco);
-//                        if(userDAO.addUser(user)) {
-//                            System.out.println("Inserido com sucesso!");
-//                        }else {
-//                            System.err.println("Erro ao inserir o usuário.");
-//                        }
-//                        break;
-//                    }case 2:{
-//                        ArrayList<Usuario> userList = userDAO.getListUser();
-//                        for(Usuario user : userList){
-//                            System.out.println(user.toString());
-//                        }
-//                        break;
-//                    }case 3:{
-//                        System.out.println("Digite o ID do usuário que deseja apagar:");
-//                        int id = scanner.nextInt();
-//                        if(userDAO.deleteUser(id)) {
-//                            System.out.println("Deletado com sucesso!");
-//                        }else {
-//                            System.err.println("Erro ao deletar o usuário.");
-//                        }
-//                    }case 4:{
-//                        String titulo, autor, editora;
-//                        System.out.println("Digite o titulo do livro:");
-//                        titulo = scanner.nextLine();
-//                        System.out.println("Digite a editora do livro:");
-//                        editora = scanner.nextLine();
-//                        System.out.println("Digite o autor:");
-//                        autor = scanner.nextLine();
-//
-//                        Livro livro = new Livro(titulo, editora, autor);
-//
-//                        livroDAO.addLivro(livro);
-//                        break;
-//                    }case 5:{
-//                        int idLivro, idUsuario;
-//                        System.out.println("Digite o ID do usuário:");
-//                        idUsuario = scanner.nextInt();
-//                        System.out.println("Digite o ID do livro:");
-//                        idLivro = scanner.nextInt();
-//
-//                        Usuario user = userDAO.getUserById(idUsuario);
-//                        Livro livro = livroDAO.getLivroById(idLivro);
-//
-//                        alocDAO.alocar(livro, user);
-//
-//                        break;
-//                    }case 6:{
-//                        ArrayList<Alocacao> listAloc = alocDAO.getListAlocacao();
-//                        for(Alocacao aloc : listAloc){
-//                            System.out.println(aloc.getUsuario().getNome() + " alocou o livro " + aloc.getLivro().getTitulo());
-//                        }
-//                        break;
-//                    }case 7:{
-//                        /**
-//                         *
-//                         * Este caso é apenas para testes.
-//                         *
-//                         */
-//                        System.out.println("aaaa");
-//                        double val1 = scanner.nextDouble();
-//                        double val2 = scanner.nextDouble();
-//                        System.out.println(val1 + " e " + val2);
-//
-//                        int i1 = scanner.nextInt();
-//                        int i2 = scanner.nextInt();
-//                        scanner.nextLine();//Pega o que tiver no buffer. no caso, uma quebra de linha
-//                        String value = scanner.nextLine();
-//                        System.out.println(value + " = " + i1 + ", " + i2);
-//
-//                    }default:
-//                        end = true;
-//                        break;
-//                }
-//            }
-//        }
-//
-//    }
+    public void run() {
+        this.controlProxyCliente = new ControlProxyCliente(this.ip, this.port);
+        this.controlProxyMototaxi = new ControlProxyMototaxi(this.ip, this.port);
 
+        boolean end = true;
+        System.out.println("Bem Vindo ao Sistema de Gerencimento de Clientes, Mototaxis e Corridas.");
+
+        while(end) {
+            System.out.println("\nSelecione: ");
+            System.out.println("1- Gerenciar Clientes");
+            System.out.println("2- Gerenciar Mototaxis");
+            System.out.println("3- Gerenciar Corridas");
+            System.out.println("0- Sair do Sistema");
+            System.out.print(">> ");
+
+            Scanner input = new Scanner(System.in);
+            int comando = Integer.parseInt(input.nextLine());
+
+            switch (comando) {
+                case 0: end=!end; break;
+                case 1: promptClient(); break;
+                case 2: promptMototaxi(); break;
+                case 3: promptCorridas(); break;
+                default: break;
+            }
+        }
+        System.out.println("Programa Finalizado!");
+        controlProxyCliente.close();
+        controlProxyMototaxi.close();
+    }
+
+    private void promptClient() {
+        boolean end = true;
+
+        while(end) {
+            System.out.println("\nSelecione: ");
+            System.out.println("1- Cadastrar Cliente");
+            System.out.println("2- Editar Cliente");
+            System.out.println("3- Remover Cliente");
+            System.out.println("4- Listar Clientes");
+            System.out.println("0- Voltar ao Menu Anterior");
+            System.out.print(">> ");
+
+            Scanner input = new Scanner(System.in);
+            int comando = Integer.parseInt(input.nextLine());
+
+            switch (comando) {
+                case 0: end=!end; break;
+                case 1: cadastrarCliente(); break;
+                case 2: editarCliente(); break;
+                case 3: removerCliente(); break;
+                case 4: listarCliente(); break;
+                default: break;
+            }
+        }
+    }
+
+    public void cadastrarCliente() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira um Id para o Cliente: ");
+        int idCliente = Integer.parseInt(input.nextLine());
+
+        System.out.print("Insira o nome do Cliente: ");
+        String nome = input.nextLine();
+
+        System.out.print("Insira o telefone do Cliente: ");
+        String telefone = input.nextLine();
+
+        String retorno = this.controlProxyCliente.cadastrar(idCliente, nome, telefone);
+        System.out.println('\n'+retorno);
+    }
+
+    public void editarCliente() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira um Id do Cliente a ser editado: ");
+        int idCliente = Integer.parseInt(input.nextLine());
+
+        System.out.print("Insira o novo nome do Cliente: ");
+        String nome = input.nextLine();
+
+        System.out.print("Insira o novo telefone do Cliente: ");
+        String telefone = input.nextLine();
+
+        String retorno = this.controlProxyCliente.editar(idCliente, nome, telefone);
+        System.out.println('\n'+retorno);
+    }
+
+    public void removerCliente() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira um Id do Cliente a ser removido: ");
+        int idCliente = Integer.parseInt(input.nextLine());
+
+        String retorno = this.controlProxyCliente.remover(idCliente);
+        System.out.println('\n'+retorno);
+    }
+
+    public void listarCliente() {
+        System.out.println(this.controlProxyCliente.listar().values());
+    }
+
+    private void promptMototaxi() {
+        boolean end = true;
+
+        while(end) {
+            System.out.println("\nSelecione: ");
+            System.out.println("1- Cadastrar Mototaxi");
+            System.out.println("2- Editar Mototaxi");
+            System.out.println("3- Remover Mototaxi");
+            System.out.println("4- Listar Mototaxis");
+            System.out.println("0- Voltar ao Menu Anterior");
+            System.out.print(">> ");
+
+            Scanner input = new Scanner(System.in);
+            int comando = Integer.parseInt(input.nextLine());
+
+            switch (comando) {
+                case 0: end=!end; break;
+                case 1: cadastrarMototaxi(); break;
+                case 2: editarMototaxi(); break;
+                case 3: removerMototaxi(); break;
+                case 4: listarMototaxi(); break;
+                default: break;
+            }
+        }
+    }
+
+    public void cadastrarMototaxi() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira um Id para o Mototaxi: ");
+        int idMototaxi = Integer.parseInt(input.nextLine());
+
+        System.out.print("Insira o nome do Mototaxi: ");
+        String nome = input.nextLine();
+
+        System.out.print("Insira o telefone do Mototaxi: ");
+        String telefone = input.nextLine();
+
+        System.out.print("Insira a praca onde o Mototaxi trabalha: ");
+        String praca = input.nextLine();
+
+        String retorno = this.controlProxyMototaxi.cadastrar(idMototaxi, nome, telefone, praca);
+        System.out.println('\n'+retorno);
+    }
+
+    public void editarMototaxi() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira um Id do Mototaxi a ser editado: ");
+        int idMototaxi = Integer.parseInt(input.nextLine());
+
+        System.out.print("Insira o novo nome do Mototaxi: ");
+        String nome = input.nextLine();
+
+        System.out.print("Insira o novo telefone do Mototaxi: ");
+        String telefone = input.nextLine();
+
+        System.out.print("Insira a praca onde o Mototaxi trabalha: ");
+        String praca = input.nextLine();
+
+        String retorno = this.controlProxyMototaxi.editar(idMototaxi, nome, telefone, praca);
+        System.out.println('\n'+retorno);
+    }
+
+    public void removerMototaxi() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Insira um Id do Mototaxi a ser removido: ");
+        int idMototaxi = Integer.parseInt(input.nextLine());
+
+        String retorno = this.controlProxyMototaxi.remover(idMototaxi);
+        System.out.println('\n'+retorno);
+    }
+
+    public void listarMototaxi() {
+        System.out.println(this.controlProxyMototaxi.listar().values());
+    }
+
+    private void promptCorridas() {
+        boolean end = true;
+
+        while(end) {
+            System.out.println("Selecione: ");
+            System.out.println("1- Solicitar Corrida");
+            System.out.println("0- Voltar ao Menu Anterior");
+            System.out.print(">> ");
+
+            Scanner input = new Scanner(System.in);
+            int comando = Integer.parseInt(input.nextLine());
+
+            switch (comando) {
+                case 0: end=!end; break;
+                case 1: break;
+                default: break;
+            }
+        }
+    }
 }
