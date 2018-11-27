@@ -1,42 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="694f027a-4bcc-4e54-805a-04c90d378991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/Cliente.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/src/ProxyCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/src/ProxyMototaxi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/src/TcpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClienteJava/src/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/boundary/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/boundary/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/control/ControlCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/control/ControlCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/control/ControlMototaxi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/control/ControlMototaxi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/control/ControlParseJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/control/ControlParseJSON.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/control/Despachante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/control/Despachante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/control/EsqueletoCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/control/EsqueletoCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/control/EsqueletoMototaxi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/control/EsqueletoMototaxi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/entity/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/entity/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/entity/Mototaxi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/entity/Mototaxi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/entity/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/entity/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/entity/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/entity/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Servidor/entity/TCPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Servidor/entity/TCPServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servidor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servidor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/control/ControlCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/control/ControlCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/control/ControlParseJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/control/ControlParseJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/control/Despachante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/control/Despachante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/control/EsqueletoCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/control/EsqueletoCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/control/EsqueletoMototaxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/control/EsqueletoMototaxi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/entity/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/entity/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/entity/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/entity/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/entity/TCPServer.java" afterDir="false" />
-    </list>
+    <list default="true" id="694f027a-4bcc-4e54-805a-04c90d378991" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,10 +44,11 @@
     <session id="-533344234">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -123,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/entity/TCPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/control/Despachante.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="360">
               <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/control/EsqueletoCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="165">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,16 +125,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/control/ControlParseJSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="180">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#134#135#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/src/br/entity/Response.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -223,9 +183,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1365" />
+    <option name="x" value="-1" />
     <option name="width" value="1368" />
-    <option name="height" value="769" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -235,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,8 +235,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +242,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543291053839" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/br/entity" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ClientJava" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -348,9 +308,9 @@
     <option name="totallyTimeSpent" value="11404000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1365" y="0" width="1368" height="769" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26510575" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2688822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -440,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/boundary/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/control/EsqueletoMototaxi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -497,10 +450,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/boundary/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/entity/TCPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="180">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -509,7 +469,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/control/Despachante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
+        <state relative-caret-position="360">
           <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -519,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/control/EsqueletoCliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -529,16 +489,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/control/ControlParseJSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#134#135#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -546,7 +500,7 @@
     <entry file="file://$PROJECT_DIR$/src/br/entity/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,9 @@
-package control;
+package src.br.control;
 
 import entity.Cliente;
 import entity.Response;
+import control.ControlParseJSON;
+import control.ControlCliente;
 
 public class EsqueletoCliente {
 	private ControlCliente cCliente;
@@ -9,7 +11,7 @@ public class EsqueletoCliente {
 	private Response response;
 
 	public EsqueletoCliente() {
-		this.cCliente = new ControlCliente();
+		this.cCliente = ControlCliente.getInstance();
 		this.cpj = new ControlParseJSON();
 	}
 
@@ -25,7 +27,15 @@ public class EsqueletoCliente {
         return response;
     }
 
-    public Response listar(){
+    public Response editar(String clienteJSON){
+        Cliente cliente = (Cliente) cpj.fromJSON(clienteJSON, Cliente.class);
+
+        if (cCliente.editar(cliente))
+            return new Response("Cliente editado com sucesso!");
+        return new Response("Um erro ocorreu ao editar cliente!");
+    }
+
+    public Response listar(String clienteJSON){
 	    String listaClientesSerializada = this.cpj.parseJSON(cCliente.listarClientes());
 	    return new Response("Listando clientes", listaClientesSerializada);
     }

@@ -1,6 +1,6 @@
 package boundary;
 
-import entity.TCPServer;
+import src.br.entity.TCPServer;
 
 public class Server {
     private static TCPServer server = new TCPServer();

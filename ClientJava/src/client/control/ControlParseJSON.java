@@ -1,4 +1,4 @@
-package client.control;
+package src.client.control;
 
 import com.google.gson.Gson;
 

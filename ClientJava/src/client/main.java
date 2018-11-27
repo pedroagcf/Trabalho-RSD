@@ -1,7 +1,7 @@
-package client;
+package src.client;
 
-import client.boundary.Prompt;
-import client.teste.Testes;
+
+import src.client.teste.Testes;
 
 public class main {
     public static void main (String args []) {

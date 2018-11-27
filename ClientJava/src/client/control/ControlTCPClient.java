@@ -1,4 +1,4 @@
-package client.control;
+package src.client.control;
 
 import java.io.*;
 
@@ -30,5 +30,9 @@ public class ControlTCPClient {
             System.out.println("IO: " + e.getMessage());
             return e.getMessage();
         }
+    }
+
+    public Conexao getConexao() {
+        return this.conexao;
     }
 }
