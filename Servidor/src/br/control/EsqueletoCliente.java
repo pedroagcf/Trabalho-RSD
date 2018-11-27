@@ -3,9 +3,6 @@ package control;
 import entity.Cliente;
 import entity.Response;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 public class EsqueletoCliente {
 	private ControlCliente cCliente;
 	private ControlParseJSON cpj;
@@ -28,21 +25,20 @@ public class EsqueletoCliente {
         return response;
     }
 
-    public Response listarClientes(){
+    public Response listar(){
 	    String listaClientesSerializada = this.cpj.parseJSON(cCliente.listarClientes());
 	    return new Response("Listando clientes", listaClientesSerializada);
     }
 
-    public Response removerCliente(String clienteJSON){
+    public Response remover(String clienteJSON){
         Cliente cliente = (Cliente) cpj.fromJSON(clienteJSON, Cliente.class);
 
-        if(cCliente.removerCliente(cliente.getId_cliente())){
+        if(cCliente.removerCliente(cliente.getIdCliente())){
             response = new Response("Cliente removido com sucesso!");
         }else{
             response = new Response("Um erro ocorreu ao deletar cliente!");
         }
 
         return response;
-
     }
 }

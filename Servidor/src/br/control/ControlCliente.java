@@ -1,9 +1,6 @@
 package control;
 
 import entity.Cliente;
-
-import javax.crypto.Cipher;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,11 +12,10 @@ public class ControlCliente {
     }
 
     public boolean cadastrar(Cliente cliente){
-        if(!this.clientes.containsKey(cliente.getId_cliente())){
-            this.clientes.put(cliente.getId_cliente(), cliente);
+        if(!this.clientes.containsKey(cliente.getIdCliente())){
+            this.clientes.put(cliente.getIdCliente(), cliente);
             return true;
         }
-
         return false;
     }
 
@@ -35,6 +31,4 @@ public class ControlCliente {
 
         return false;
     }
-
-
 }

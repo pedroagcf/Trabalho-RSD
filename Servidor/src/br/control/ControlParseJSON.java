@@ -1,6 +1,7 @@
 package control;
 
 import com.google.gson.Gson;
+import entity.Request;
 
 public class ControlParseJSON {
 
@@ -14,7 +15,7 @@ public class ControlParseJSON {
         return this.gson.toJson(t);
     }
 
-    public Object fromJSON(String json, Object c){
-        return gson.fromJson(json, c.getClass());
+    public Object fromJSON(String json, Class c){
+        return gson.fromJson(json, c);
     }
 }

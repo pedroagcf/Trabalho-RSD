@@ -4,9 +4,6 @@ import entity.Request;
 import entity.Response;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Despachante {
 
@@ -21,19 +18,17 @@ public class Despachante {
 
     public String invoke(String message) throws Exception{
         Request request = (Request) cpj.fromJSON(message, Request.class);
-        String [] requestClassWithMethod = request.getMethod().split(".");
+
+        String [] requestClassWithMethod = request.getMethod().split("[\\W]");
 
         String requestedClass = requestClassWithMethod[0];
         String requestedMethod = requestClassWithMethod[1];
 
         objRef = Class.forName("control.Esqueleto"+ requestedClass);
-        
-        method = objRef.getMethod(request.getMethod(), String.class);
+        method = objRef.getMethod(requestedMethod, String.class);
 
+        Response resposta = (Response) method.invoke(objRef.newInstance(), request.getData());
 
-        Response resposta = (Response) method.invoke(objRef.newInstance(), requestedMethod);
-        
         return cpj.parseJSON(resposta);
-                    
     }
 }

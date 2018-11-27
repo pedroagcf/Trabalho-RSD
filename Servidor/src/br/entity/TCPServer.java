@@ -28,16 +28,19 @@ public class TCPServer {
     public void keepListen() {
         try{
             ServerSocket listenSocket = new ServerSocket(this.porta);
-            System.out.println("Servidor escutando na porta "+this.porta);
+            System.out.println("Servidor escutando na Porta: "+this.porta);
 
             while(true) {
                 Socket clientSocket = listenSocket.accept();
+                System.out.println("Oi");
                 in = new DataInputStream(clientSocket.getInputStream());
                 out = new DataOutputStream(clientSocket.getOutputStream());
 
                 Despachante despachante = new Despachante();
                 String request = getRequest();
+
                 String response = despachante.invoke(request);
+                System.out.println(response);
                 sendResponse(response);
             }
         } catch (IOException e) {

@@ -1,11 +1,11 @@
-package entity;
+package client.entity;
 
-public class Cliente {
+public class ProxyCliente {
     private int idCliente;
     private String nome;
     private String telefone;
 
-    public Cliente(int idCliente, String nome, String telefone) {
+    public ProxyCliente(int idCliente, String nome, String telefone) {
         this.idCliente = idCliente;
         this.nome = nome;
         this.telefone = telefone;
@@ -25,9 +25,5 @@ public class Cliente {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
-    }
-
-    public int getIdCliente() {
-        return idCliente;
     }
 }
