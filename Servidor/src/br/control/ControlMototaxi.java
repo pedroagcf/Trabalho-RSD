@@ -48,5 +48,7 @@ public class ControlMototaxi {
         return this.mototaxis;
     }
 
-
+    public boolean existeMototaxi(int id_mototaxi){
+        return this.mototaxis.containsKey(id_mototaxi);
+    }
 }

@@ -2,7 +2,7 @@ package src.client.control;
 
 import java.io.*;
 
-import client.boundary.Prompt;
+//import client.boundary.Prompt;
 import client.entity.Conexao;
 
 public class ControlTCPClient {

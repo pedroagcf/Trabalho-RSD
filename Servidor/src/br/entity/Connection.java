@@ -32,12 +32,14 @@ class Connection extends Thread{
     public void run() {
         try {
             while (true) {
-                String request = in.readUTF();
-                System.out.println("Requested :" + request);
+                if(in.available() > 0 ){
+                    String request = in.readUTF();
+                    System.out.println("Requested :" + request);
 
-                String response = despachante.invoke(request);
+                    String response = despachante.invoke(request);
 
-                out.writeUTF(response);
+                    out.writeUTF(response);
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -45,12 +47,4 @@ class Connection extends Thread{
             e.printStackTrace();
         }
     }
-
-//    public String getRequest() throws IOException{
-//        return in.readUTF();
-//    }
-//
-//    public void sendResponse(String response) throws IOException{
-//        out.writeUTF(response);
-//    }
 }

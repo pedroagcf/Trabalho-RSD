@@ -45,4 +45,8 @@ public class ControlCliente {
         }
         return false;
     }
+
+    public boolean existeCliente(int id_cliente){
+        return this.clientes.containsKey(id_cliente);
+    }
 }
