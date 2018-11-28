@@ -1,9 +1,7 @@
-package src.br.control;
+package control;
 
 import entity.Mototaxi;
 import entity.Response;
-import control.ControlMototaxi;
-import control.ControlParseJSON;
 
 public class EsqueletoMototaxi {
 

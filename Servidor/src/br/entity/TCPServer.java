@@ -1,4 +1,4 @@
-package src.br.entity;
+package entity;
 
 import java.net.ServerSocket;
 import java.net.Socket;

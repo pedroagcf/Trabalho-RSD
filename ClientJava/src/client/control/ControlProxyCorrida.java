@@ -2,11 +2,13 @@ package src.client.control;
 
 import src.client.entity.ProxyCorrida;
 
-public class ControlProxyCorrida {
-    ControlTCPClient controlTCPClient;
+import java.util.Map;
 
-    public ControlProxyCorrida(String ip, int port){
-        this.controlTCPClient = new ControlTCPClient(ip, port);
+public class ControlProxyCorrida {
+    private ControlTCPClient controlTCPClient;
+
+    public ControlProxyCorrida(ControlTCPClient controlTCPClient){
+        this.controlTCPClient = controlTCPClient;
     }
 
     public String iniciarCorrida(int id_cliente, int id_mototaxi){
@@ -23,6 +25,14 @@ public class ControlProxyCorrida {
         controlTCPClient.sendRequest(ControlParseJSON.createJson(request));
         client.entity.Response response = (client.entity.Response) ControlParseJSON.fromJSON(controlTCPClient.getResponse(), client.entity.Response.class);
         return response.getMessage();
+    }
+
+    public Map listar(){
+        client.entity.Request request = new client.entity.Request("Corrida.listar", null);
+        controlTCPClient.sendRequest(ControlParseJSON.createJson(request));
+        client.entity.Response response = (client.entity.Response) ControlParseJSON.fromJSON(controlTCPClient.getResponse(), client.entity.Response.class);
+        Map<Integer, ProxyCorrida> corridaMap = (Map<Integer, ProxyCorrida>) ControlParseJSON.fromJSON(response.getData(), Map.class);
+        return corridaMap;
     }
 
     public void close() {

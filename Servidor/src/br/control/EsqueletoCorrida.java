@@ -31,4 +31,9 @@ public class EsqueletoCorrida {
 
         return new Response("Houve um erro ao encerrar a corrida!");
     }
+
+    public Response listar(String corridaRequestJSON){
+        String listaCorridasSerializada = this.controlParseJSON.parseJSON(controlCorrida.listar());
+        return new Response("Listando corridas", listaCorridasSerializada);
+    }
 }

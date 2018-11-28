@@ -1,8 +1,4 @@
-package src.client;
-
-
-import src.client.boundary.Prompt;
-import src.client.teste.Testes;
+package src.client.boundary;
 
 public class main {
     public static void main (String args []) {

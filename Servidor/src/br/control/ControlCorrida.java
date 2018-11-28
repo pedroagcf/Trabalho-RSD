@@ -46,4 +46,8 @@ public class ControlCorrida {
 
         return false;
     }
+
+    public Map<Integer, Corrida> listar(){
+        return this.corridas;
+    }
 }

@@ -1,10 +1,11 @@
-package src.br.entity;
+package entity;
+
+import control.Despachante;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import src.br.control.Despachante;
 
 class Connection extends Thread{
     private DataInputStream in;

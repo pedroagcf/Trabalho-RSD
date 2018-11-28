@@ -1,19 +1,27 @@
 package src.client.boundary;
 
 import src.client.control.ControlProxyCliente;
+import src.client.control.ControlProxyCorrida;
 import src.client.control.ControlProxyMototaxi;
+import src.client.control.ControlTCPClient;
 
 import java.util.Scanner;
 
 public class Prompt {
     private int port =7896;
     private String ip = "localhost";
-    ControlProxyCliente controlProxyCliente;
-    ControlProxyMototaxi controlProxyMototaxi;
+    private ControlProxyCliente controlProxyCliente;
+    private ControlProxyMototaxi controlProxyMototaxi;
+    private ControlProxyCorrida controlProxyCorrida;
+    private ControlTCPClient controlTCPClient;
+    private Scanner input;
 
     public void run() {
-        this.controlProxyCliente = new ControlProxyCliente(this.ip, this.port);
-        this.controlProxyMototaxi = new ControlProxyMototaxi(this.ip, this.port);
+        this.controlTCPClient = new ControlTCPClient(this.ip, this.port);
+        this.controlProxyCliente = new ControlProxyCliente(this.controlTCPClient);
+        this.controlProxyMototaxi = new ControlProxyMototaxi(controlTCPClient);
+        this.controlProxyCorrida = new ControlProxyCorrida(controlTCPClient);
+        this.input = new Scanner(System.in);
 
         boolean end = true;
         System.out.println("Bem Vindo ao Sistema de Gerencimento de Clientes, Mototaxis e Corridas.");
@@ -26,7 +34,6 @@ public class Prompt {
             System.out.println("0- Sair do Sistema");
             System.out.print(">> ");
 
-            Scanner input = new Scanner(System.in);
             int comando = Integer.parseInt(input.nextLine());
 
             switch (comando) {
@@ -54,7 +61,6 @@ public class Prompt {
             System.out.println("0- Voltar ao Menu Anterior");
             System.out.print(">> ");
 
-            Scanner input = new Scanner(System.in);
             int comando = Integer.parseInt(input.nextLine());
 
             switch (comando) {
@@ -69,8 +75,6 @@ public class Prompt {
     }
 
     public void cadastrarCliente() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Insira um Id para o Cliente: ");
         int idCliente = Integer.parseInt(input.nextLine());
 
@@ -85,8 +89,6 @@ public class Prompt {
     }
 
     public void editarCliente() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Insira um Id do Cliente a ser editado: ");
         int idCliente = Integer.parseInt(input.nextLine());
 
@@ -101,8 +103,6 @@ public class Prompt {
     }
 
     public void removerCliente() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Insira um Id do Cliente a ser removido: ");
         int idCliente = Integer.parseInt(input.nextLine());
 
@@ -141,8 +141,6 @@ public class Prompt {
     }
 
     public void cadastrarMototaxi() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Insira um Id para o Mototaxi: ");
         int idMototaxi = Integer.parseInt(input.nextLine());
 
@@ -160,8 +158,6 @@ public class Prompt {
     }
 
     public void editarMototaxi() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Insira um Id do Mototaxi a ser editado: ");
         int idMototaxi = Integer.parseInt(input.nextLine());
 
@@ -179,8 +175,6 @@ public class Prompt {
     }
 
     public void removerMototaxi() {
-        Scanner input = new Scanner(System.in);
-
         System.out.print("Insira um Id do Mototaxi a ser removido: ");
         int idMototaxi = Integer.parseInt(input.nextLine());
 
@@ -197,16 +191,48 @@ public class Prompt {
 
         while(end) {
             System.out.println("Selecione: ");
-            System.out.println("1- Solicitar Corrida");
+            System.out.println("1- Solicitar corrida");
+            System.out.println("2- Encerrar corrida");
+            System.out.println("3- Exibir corridas ativas");
             System.out.println("0- Voltar ao Menu Anterior");
             System.out.print(">> ");
-
+            int idMototaxi, idCliente;
             Scanner input = new Scanner(System.in);
             int comando = Integer.parseInt(input.nextLine());
 
             switch (comando) {
                 case 0: end=!end; break;
-                case 1: break;
+                case 1:
+
+                    System.out.print("Insira um Id do Mototaxi a ser solicitado: ");
+                    idMototaxi = Integer.parseInt(input.nextLine());
+
+                    System.out.print("Insira um Id do Cliente que irá realizar a corrida: ");
+                    idCliente = Integer.parseInt(input.nextLine());
+
+                    System.out.println(this.controlProxyCorrida.iniciarCorrida(idCliente, idMototaxi));
+
+                    break;
+
+                case 2:
+
+                    System.out.print("Insira um Id do Mototaxi que está em corrida: ");
+                    idMototaxi = Integer.parseInt(input.nextLine());
+
+                    System.out.print("Insira um Id do Cliente que está na corrida: ");
+                    idCliente = Integer.parseInt(input.nextLine());
+
+                    System.out.println(this.controlProxyCorrida.encerrarCorrida(idCliente, idMototaxi));
+
+                    break;
+
+                case 3:
+
+                    System.out.println(this.controlProxyCorrida.listar().values());
+
+
+
+                    break;
                 default: break;
             }
         }

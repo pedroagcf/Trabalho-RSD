@@ -1,9 +1,7 @@
-package src.br.control;
+package control;
 
 import entity.Cliente;
 import entity.Response;
-import control.ControlParseJSON;
-import control.ControlCliente;
 
 public class EsqueletoCliente {
 	private ControlCliente cCliente;

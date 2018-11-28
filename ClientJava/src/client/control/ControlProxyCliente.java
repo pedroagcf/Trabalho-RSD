@@ -8,8 +8,8 @@ import java.util.Map;
 public class ControlProxyCliente {
     ControlTCPClient controlTCPClient;
 
-    public ControlProxyCliente(String ip, int port) {
-        this.controlTCPClient = new ControlTCPClient(ip, port);
+    public ControlProxyCliente(ControlTCPClient controlTCPClient) {
+        this.controlTCPClient = controlTCPClient;
     }
 
     public String cadastrar(int idCliente, String nome, String telefone) {

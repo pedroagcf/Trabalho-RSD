@@ -5,10 +5,10 @@ import src.client.entity.ProxyMototaxi;
 import java.util.Map;
 
 public class ControlProxyMototaxi {
-    ControlTCPClient controlTCPClient;
+    private ControlTCPClient controlTCPClient;
 
-    public ControlProxyMototaxi(String ip, int port) {
-        this.controlTCPClient = new ControlTCPClient(ip, port);
+    public ControlProxyMototaxi(ControlTCPClient controlTCPClient) {
+        this.controlTCPClient = controlTCPClient;
     }
 
     public String cadastrar(int id_mototaxi, String nome, String telefone, String praca) {

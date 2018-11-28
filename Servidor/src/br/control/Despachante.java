@@ -1,8 +1,7 @@
-package src.br.control;
+package control;
 
 import entity.Request;
 import entity.Response;
-import control.ControlParseJSON;
 
 import java.lang.reflect.Method;
 
@@ -25,7 +24,7 @@ public class Despachante {
         String requestedClass = requestClassWithMethod[0];
         String requestedMethod = requestClassWithMethod[1];
 
-        objRef = Class.forName("src.br.control.Esqueleto"+ requestedClass);
+        objRef = Class.forName("control.Esqueleto"+ requestedClass);
         method = objRef.getMethod(requestedMethod, String.class);
 
         Response resposta = (Response) method.invoke(objRef.newInstance(), request.getData());
