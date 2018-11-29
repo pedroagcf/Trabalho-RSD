@@ -33,7 +33,7 @@ class Connection extends Thread{
     public void run() {
         try {
             while (true) {
-                if(in.available() > 0 ){
+                if(in.available() > 0){
                     String request = in.readUTF();
                     System.out.println("Requested :" + request);
 

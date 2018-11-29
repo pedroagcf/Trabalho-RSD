@@ -210,7 +210,7 @@ public class Prompt {
                     System.out.print("Insira um Id do Cliente que irá realizar a corrida: ");
                     idCliente = Integer.parseInt(input.nextLine());
 
-                    System.out.println(this.controlProxyCorrida.iniciarCorrida(idCliente, idMototaxi));
+                    System.out.println("\n"+this.controlProxyCorrida.iniciarCorrida(idCliente, idMototaxi)+"\n");
 
                     break;
 
@@ -222,13 +222,13 @@ public class Prompt {
                     System.out.print("Insira um Id do Cliente que está na corrida: ");
                     idCliente = Integer.parseInt(input.nextLine());
 
-                    System.out.println(this.controlProxyCorrida.encerrarCorrida(idCliente, idMototaxi));
+                    System.out.println("\n"+this.controlProxyCorrida.encerrarCorrida(idCliente, idMototaxi)+"\n");
 
                     break;
 
                 case 3:
 
-                    System.out.println(this.controlProxyCorrida.listar().values());
+                    System.out.println("\n"+this.controlProxyCorrida.listar().values()+"\n");
 
 
 
